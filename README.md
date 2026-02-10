@@ -54,17 +54,15 @@ To address these challenges, I adopted a strict **four-phase engineering methodo
 ### 🏗️ Attack Pipeline
 The project is structured into distinct logical phases to minimize risk and maximize efficiency:
 
-```mermaid
 graph TD
     A[Start] --> B{Phase 1: Validation}
     B -->|Sanity Check Passed| C[Phase 2: Benchmarking]
     B -->|Failed| B1[Debug Logic]
     C -->|Measure H/s| D[Phase 3: Estimation]
     D -->|Calculate Time| E{Is Feasible?}
-    E -->|Yes (< 24h)| F[Phase 4: Execution]
-    E -->|No (> Years)| G[Refine Dictionary]
+    E -->|"Yes (< 24h)"| F[Phase 4: Execution]
+    E -->|"No (> Years)"| G[Refine Dictionary]
     F -->|Success| H[Recover Plaintext]
-```
 
 ### 🔬 Methodology Breakdown
 
@@ -308,8 +306,8 @@ PBKDF2-Cracker/
 ### Installation
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/[YOUR_USERNAME]/PBKDF2-Cracker.git
-    cd PBKDF2-Cracker
+    git clone https://github.com/Giovanni-Del-Bianco/PBKDF2-AES-Security-Analysis.git
+    cd PBKDF2-AES-Security-Analysis
     ```
 2.  Install the required cryptographic library:
     ```bash
