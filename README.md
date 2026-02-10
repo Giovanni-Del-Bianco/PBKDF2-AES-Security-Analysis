@@ -54,6 +54,7 @@ To address these challenges, I adopted a strict **four-phase engineering methodo
 ### 🏗️ Attack Pipeline
 The project is structured into distinct logical phases to minimize risk and maximize efficiency:
 
+```mermaid
 graph TD
     A[Start] --> B{Phase 1: Validation}
     B -->|Sanity Check Passed| C[Phase 2: Benchmarking]
@@ -63,6 +64,7 @@ graph TD
     E -->|"Yes (< 24h)"| F[Phase 4: Execution]
     E -->|"No (> Years)"| G[Refine Dictionary]
     F -->|Success| H[Recover Plaintext]
+```
 
 ### 🔬 Methodology Breakdown
 
